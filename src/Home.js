@@ -1,19 +1,8 @@
 import React from "react";
 
-class Home extends React.Component {
+export default class Home extends React.Component {
     constructor(props) {
         super(props);
-
-        this.startJokeGame = this.startJokeGame.bind(this);
-        this.startQuoteGame = this.startQuoteGame.bind(this);
-    }
-
-    startJokeGame () {
-        alert("Start Joke Game!")
-    }
-
-    startQuoteGame () {
-        alert("Start Quote Game!")
     }
 
     render() {
@@ -28,12 +17,10 @@ class Home extends React.Component {
                     </p>
                 </div>
                 <div className="level">
-                    <button className="button is-large level-item" onClick={this.startJokeGame}>Joke API Guessr</button>
-                    <button className="button is-large level-item" onClick={this.startQuoteGame}>Famous Quote Guessr</button>
+                    <button className="button is-large level-item" onClick={this.props.app.startJokeGame}>Joke API Guessr</button>
+                    <button className="button is-large level-item" onClick={this.props.app.startQuoteGame}>Famous Quote Guessr</button>
                 </div>
             </section>
         );
     }
 }
-
-export default Home;

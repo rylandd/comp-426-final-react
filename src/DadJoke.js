@@ -2,11 +2,14 @@ import React, { Component } from "react";
 import axios from 'axios';
 
 export default class DadJoke extends Component {
-    state = {
-        error: null,
-        isLoaded: false,
-        data: null
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            error: null,
+            isLoaded: false,
+            data: null
+        };
+    }
 
     componentDidMount() {
         axios.get("https://icanhazdadjoke.com/", {
