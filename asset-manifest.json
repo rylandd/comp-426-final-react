@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/comp-426-final-react/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/comp-426-final-react/static/js/main.883a84a8.chunk.js",
+    "main.js.map": "/comp-426-final-react/static/js/main.883a84a8.chunk.js.map",
+    "runtime-main.js": "/comp-426-final-react/static/js/runtime-main.40a9fd93.js",
+    "runtime-main.js.map": "/comp-426-final-react/static/js/runtime-main.40a9fd93.js.map",
+    "static/js/2.a033b684.chunk.js": "/comp-426-final-react/static/js/2.a033b684.chunk.js",
+    "static/js/2.a033b684.chunk.js.map": "/comp-426-final-react/static/js/2.a033b684.chunk.js.map",
+    "static/js/3.79aeb2c1.chunk.js": "/comp-426-final-react/static/js/3.79aeb2c1.chunk.js",
+    "static/js/3.79aeb2c1.chunk.js.map": "/comp-426-final-react/static/js/3.79aeb2c1.chunk.js.map",
+    "index.html": "/comp-426-final-react/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/comp-426-final-react/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.a033b684.chunk.js.LICENSE.txt": "/comp-426-final-react/static/js/2.a033b684.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.40a9fd93.js",
+    "static/js/2.a033b684.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.883a84a8.chunk.js"
+  ]
+}
