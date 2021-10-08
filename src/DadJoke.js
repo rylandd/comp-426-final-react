@@ -41,10 +41,10 @@ export default class DadJoke extends Component {
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
-            return <div>Loading...</div>;
+            return <div className="box">Loading...</div>;
         } else {
             return (
-                <div>{data.joke}</div>
+                <div className="notification is-success">Way to go! Here's a bonus dad joke: {data.joke}</div>
             );
         }
     }

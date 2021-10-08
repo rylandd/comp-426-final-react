@@ -1,7 +1,7 @@
 import React from "react";
 import Home from './Home.js';
 import JokeGame from './JokeGame.js';
-import Quote from './Quote.js';
+import QuoteGame from "./QuoteGame";
 
 class App extends React.Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class App extends React.Component {
   }
 
   startQuoteGame () {
-    this.setState({screen: (<Quote app={this}/>)});
+    this.setState({screen: (<QuoteGame app={this}/>)});
   }
 
   goHome () {
@@ -29,7 +29,16 @@ class App extends React.Component {
   }
 
   render() {
-    return this.state.screen;
+    return (
+        <div>
+          <nav className="navbar">
+            <div className="navbar-brand">
+              <button className="button navbar-item" onClick={this.goHome}>Home</button>
+            </div>
+          </nav>
+          {this.state.screen}
+        </div>
+    );
   }
 }
 

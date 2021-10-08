@@ -9,7 +9,7 @@ export default class Pun extends Component {
     };
 
     componentDidMount() {
-        axios.get("https://v2.jokeapi.dev/joke/Pun?type=single", {
+        axios.get("https://v2.jokeapi.dev/joke/Any", {
             headers: {
                 'Accept': 'application/json',
                 'User-Agent': 'Ryland - rylandd@me.com'
@@ -40,9 +40,16 @@ export default class Pun extends Component {
         } else if (!isLoaded) {
             return <div>Loading...</div>;
         } else {
-            return (
-                <div>{data.joke}</div>
-            );
+            if (data.type === "single") {
+                return (
+                    <div>{data.joke}</div>
+                );
+            }
+            else {
+                return (
+                    <div>{data.setup} {data.delivery}</div>
+                )
+            }
         }
     }
 }
