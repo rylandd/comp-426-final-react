@@ -57,7 +57,7 @@ export default class QuoteGame extends React.Component {
     }
 
     fetchQuote() {
-        axios.get("http://api.quotable.io/random", {
+        axios.get("https://api.quotable.io/random", {
             headers: {
                 'User-Agent': 'Ryland - rylandd@me.com'
             }
@@ -90,7 +90,7 @@ export default class QuoteGame extends React.Component {
     }
 
     setAnswerChoices () {
-        let url = "http://api.quotable.io/quotes?tags=";
+        let url = "https://api.quotable.io/quotes?tags=";
         this.state.quote.tags.forEach(tag => {
             url += tag + "|";
         });
